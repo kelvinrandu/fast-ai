@@ -22,7 +22,10 @@ openai.api_key = config("OPEN_AI_KEY")
 
 
 # Initiate App
-app = FastAPI()
+app = FastAPI(    
+    title="fastapi",
+    version=0.1,
+    root_path="/")
 
 
 # CORS - Origins
